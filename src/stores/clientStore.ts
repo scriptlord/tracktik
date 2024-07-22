@@ -19,12 +19,9 @@ export const useClientStore = defineStore('client', {
           q: params?.q || this.searchQuery,
           filter: params?.filter || (this.filter !== 'All Sites' ? this.filter : undefined)
         });
-        console.log('API Response:', response);
         this.clients = response.data;
-        console.log('Clients:', this.clients);
         this.totalPages = Math.ceil(Number(response.headers['x-total-count']) / (params?._limit || 10));
       } catch (error) {
-        console.error('Error fetching clients:', error);
       }
     },
     setSearchQuery(query: string) {

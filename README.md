@@ -1,70 +1,93 @@
 # Trackit Challenge
-Description
+# Description
 Trackit Challenge is a web application built with Vue.js, designed to manage clients and sites efficiently. It allows users to view and manage client information, site details, and associated data in a user-friendly interface.
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Features
-View and manage clients
-View and manage sites
-Responsive design
-Efficient search and pagination
-Loading indicators for a better user experience
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Table of Contents
+Project Setup
+Project Structure
+Features
+Installation
+Running the Application
+Testing
+Areas for Improvement
 
 ## Project Setup
+The project is set up with the following configurations:
 
-```sh
-npm install
-```
+TypeScript: For static type checking.
+JSX Support: To allow JSX syntax in Vue components.
+Vue Router: For single-page application development.
+Pinia: For state management.
+Vitest: For unit testing.
+ESLint: For code quality and linting.
+Cypress: For end-to-end testing.
 
-### Compile and Hot-Reload for Development
+## Project Structure
+The project follows a standard Vue.js structure with some additional directories for organization:
 
-```sh
-npm run dev
-```
+tracktik-challenge/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── stores/
+│   ├── views/
+│   ├── router/
+│   ├── utils/
+│   ├── types/
+│   ├── tests/
+│   │   ├── unit/
+│   │   ├── e2e/
+│   │   ├── setup.ts
+│   ├── App.vue
+│   ├── main.ts
+├── .eslintrc.js
+├── .gitignore
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
 
-### Type-Check, Compile and Minify for Production
+## Features
+Client and Site Management: View, search, and navigate through clients and sites.
+Responsive Design: Uses Tailwind CSS for responsive and modern UI.
+State Management: Pinia is used for managing application state.
+Routing: Vue Router for navigating between different views.
+Loading Indicators: Custom and simple loaders for better UX during data fetching.
 
-```sh
-npm run build
-```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Installation
+To set up the project locally, follow these steps:
 
-```sh
-npm run test:unit
-```
+ 1. Clone the repository:
+    git clone https://github.com/yourusername/tracktik-challenge.git
+    cd tracktik-challenge
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+2. Install dependencies:
 
-```sh
-npm run test:e2e:dev
-```
+## Running the Application
+    npm run dev
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+The application will be available at http://localhost:3000.
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
 
-```sh
-npm run build
-npm run test:e2e
-```
 
-### Lint with [ESLint](https://eslint.org/)
+## Areas for Improvement
+While the project is functional and includes many features, there are areas for improvement:
 
-```sh
-npm run lint
-```
+1. Testing: Implement comprehensive unit and end-to-end tests to cover all components and views.
+
+2. Performance Optimization: Optimize data fetching and rendering performance.
+
+3. Accessibility: Ensure the application meets accessibility standards.
+
+4. Documentation: Detailed documentation for each component and utility function.
+
+
+## Contributing
+Contributions are welcome! Please submit a pull request or open an issue to discuss potential changes.
+
+## License
+This project is licensed under the MIT License.

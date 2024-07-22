@@ -14,7 +14,6 @@ export const useSiteStore = defineStore('site', {
     async fetchSites(params: { _page: number; _limit: number; q?: string }) {
         try {
           const response = await apiService.getSites(params);
-          console.log('API Response:', response);
           this.sites = response.data;
           this.totalPages = Math.ceil(Number(response.headers['x-total-count']) / params._limit);
         } catch (error) {

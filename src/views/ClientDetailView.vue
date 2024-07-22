@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto p-4">
-      <Header :title="'Scheduling'" :showBackButton="true" @goBack="goBack" />
+      <Header :title="'List'" :showBackButton="true" @goBack="goBack" />
       <SimpleLoader v-if="isLoading" />
       <template v-else-if="client">
         <ClientSummary :client="client" />
@@ -23,6 +23,7 @@
   import ClientSummary from '@/components/ClientSummary.vue';
   import ClientDetails from '@/components/ClientDetails.vue';
   import SimpleLoader from '@/components/SimpleLoader.vue';
+  
   
   export default defineComponent({
     name: 'ClientDetailView',
