@@ -51,11 +51,15 @@ tracktik-challenge/
 ├── vite.config.ts
 
 ## Features
-Client and Site Management: View, search, and navigate through clients and sites.
-Responsive Design: Uses Tailwind CSS for responsive and modern UI.
-State Management: Pinia is used for managing application state.
-Routing: Vue Router for navigating between different views.
-Loading Indicators: Custom and simple loaders for better UX during data fetching.
+1. Client and Site Management: View, search, and navigate through clients and sites.
+2. Responsive Design: Uses Tailwind CSS for responsive and modern UI.
+3. State Management: Pinia is used for managing application state.
+4. Routing: Vue Router for navigating between different views.
+5. Loading Indicators: Custom and simple loaders for better UX during data fetching.
+6. Dropdown for Toggle: Users can toggle between 'Clients' and 'Sites' using a dropdown menu to experience the      
+    pagination functionality.
+7. Pagination: Previous and next buttons only appear when there is a previous or next page available.
+8. Debounce: A debounce of 1 sec to make api call when filtering results
 
 
 ## Installation
