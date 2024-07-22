@@ -46,10 +46,12 @@ To set up the project locally, follow these steps:
 
  1. Clone the repository:
     git remote add origin https://github.com/scriptlord/tracktik.git
+
     cd tracktik-challenge
+    
     branch: main
 
-2. Install dependencies:
+3. Install dependencies:
 
 ## Running the Application
     npm run dev
