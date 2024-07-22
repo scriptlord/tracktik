@@ -27,29 +27,8 @@ Cypress: For end-to-end testing.
 ## Project Structure
 The project follows a standard Vue.js structure with some additional directories for organization:
 
-tracktik-challenge/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── stores/
-│   ├── views/
-│   ├── router/
-│   ├── utils/
-│   ├── types/
-│   ├── tests/
-│   │   ├── unit/
-│   │   ├── e2e/
-│   │   ├── setup.ts
-│   ├── App.vue
-│   ├── main.ts
-├── .eslintrc.js
-├── .gitignore
-├── index.html
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-
+ <img width="395" alt="Screenshot 2024-07-23 at 00 16 57" src="https://github.com/user-attachments/assets/83b3fb04-21ed-4a23-b8a7-b2e5e7274b17">
+ 
 ## Features
 1. Client and Site Management: View, search, and navigate through clients and sites.
 2. Responsive Design: Uses Tailwind CSS for responsive and modern UI.
