@@ -62,8 +62,9 @@ Loading Indicators: Custom and simple loaders for better UX during data fetching
 To set up the project locally, follow these steps:
 
  1. Clone the repository:
-    git clone https://github.com/yourusername/tracktik-challenge.git
+    git remote add origin https://github.com/scriptlord/tracktik.git
     cd tracktik-challenge
+    branch: main
 
 2. Install dependencies:
 
